@@ -31,12 +31,11 @@ export const Home = () => {
                     <label>Filter by Region</label>
                     <img style={styleDrop}  className='Droparrow w-[12px] h-3  transition-all' src={arrow} alt='arrow' />
                     <div style={style} className='absolute transition-all  rounded-md' >
-                        <button onClick={() => setSearch("South America")}>South America</button>
-                        <button onClick={() => setSearch("North America")}>North America</button>
-                        <button onClick={() => setSearch("Asia")}>Asia</button>
-                        <button onClick={() => setSearch("Africa")}>Africa</button>
-                        <button onClick={() => setSearch("Europe")}>Europe</button>
-                        <button onClick={() => setSearch("Oceania")}>Oceania</button>
+                        <button onClick={() => setSearch("americas")}>americas</button>
+                        <button onClick={() => setSearch("asia")}>Asia</button>
+                        <button onClick={() => setSearch("africa")}>Africa</button>
+                        <button onClick={() => setSearch("europe")}>Europe</button>
+                        <button onClick={() => setSearch("oceania")}>Oceania</button>
                     </div>
                 </div>
 

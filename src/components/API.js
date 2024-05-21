@@ -5,17 +5,17 @@ import { AppContext } from '../App';
 const useCountries = () => {
   const { setError, search } = useContext(AppContext);
   const [countries, setCountries] = useState([]);
+  console.log(countries);
 
   const getCountriesByRegion = async () => {
     try {
       let response;
       if (
-        search === "Asia" ||
-        search === "Africa" ||
-        search === "South America" ||
-        search === "North America" ||
-        search === "Europe" ||
-        search === "Oceania"
+        search === "asia" ||
+        search === "africa" ||
+        search === "americas" ||
+        search === "europe" ||
+        search === "oceania"
       ) {
         response = await axios.get(`https://restcountries.com/v3.1/region/${search}`);
       } else {
