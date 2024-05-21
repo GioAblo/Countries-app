@@ -31,7 +31,7 @@ export const Home = () => {
                     <label>Filter by Region</label>
                     <img style={styleDrop}  className='Droparrow w-[12px] h-3  transition-all' src={arrow} alt='arrow' />
                     <div style={style} className='absolute transition-all  rounded-md' >
-                        <button onClick={() => setSearch("americas")}>americas</button>
+                        <button onClick={() => setSearch("americas")}>Americas</button>
                         <button onClick={() => setSearch("asia")}>Asia</button>
                         <button onClick={() => setSearch("africa")}>Africa</button>
                         <button onClick={() => setSearch("europe")}>Europe</button>
